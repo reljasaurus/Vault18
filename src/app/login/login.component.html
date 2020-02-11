@@ -1,0 +1,22 @@
+<form (submit)="loginUser($event)">
+    <br>
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <input type="submit" value="Submit">
+
+    <br>
+    <br>
+    
+    <button>tab1</button>
+    <button>tab2</button>
+    <button>tab3</button>
+    <button *ngIf = "korisnikUlogiran">tab4</button>
+
+    <br><br>
+
+    <label>String iz ove klase:</label>
+    {{nekiDrugiString}}
+    <br>
+    <button  (click)="dohvatiStringIzServisa()" style="width: 66px; height: 22px;">Stisni</button>
+
+</form>
